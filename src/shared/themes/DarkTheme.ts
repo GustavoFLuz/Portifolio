@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material';
-import { deepPurple, lightBlue } from '@mui/material/colors';
 
 export const DarkTheme = createTheme({
     palette: {
