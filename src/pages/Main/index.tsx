@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import { Hero, About, Skills } from './sections'
+import { Hero, About, Skills, Contact } from './sections'
 
 export const Main = () => {
     return (
@@ -7,6 +7,7 @@ export const Main = () => {
             <Hero/>
             <About/>
             <Skills/>
+            <Contact/>
         </Box>
     )
 }
