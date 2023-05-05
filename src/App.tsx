@@ -1,6 +1,15 @@
+import { AppThemeProvider } from "./shared/contexts"
+import { router } from "./router2"
+import { RouterProvider } from "react-router-dom"
+import { CssBaseline } from "@mui/material"
 
-export const App = () => {
+function App() {
   return (
-    <div>App</div>
+    <AppThemeProvider>
+      <CssBaseline />
+      <RouterProvider router={router} />
+    </AppThemeProvider>
   )
 }
+
+export default App
