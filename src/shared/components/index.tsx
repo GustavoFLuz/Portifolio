@@ -1,3 +1,5 @@
 export * from "./PageWrapper"
 export * from "./Navbar"
 export * from "./Background"
+export * from "./CustomModal"
+export * from "./SkillCard"
