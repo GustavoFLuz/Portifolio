@@ -6,10 +6,10 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const socialMedias = [
-    { name: "GitHub", icon: <GitHubIcon fontSize="large" />, link: "#" },
-    { name: "LinkedIn", icon: <LinkedInIcon fontSize="large" />, link: "#" },
-    { name: "Instagram", icon: <InstagramIcon fontSize="large" />, link: "#" },
-    { name: "Email", icon: <EmailIcon fontSize="large" />, link: "#" },
-    { name: "Telegram", icon: <TelegramIcon fontSize="large" />, link: "#" },
-    { name: "WhatsApp", icon: <WhatsAppIcon fontSize="large" />, link: "#" },
+    { name: "GitHub", lgIcon: <GitHubIcon fontSize="large" />, mdIcon: <GitHubIcon />, link: "#", about: true, navbar: true, contact: false },
+    { name: "LinkedIn", lgIcon: <LinkedInIcon fontSize="large" />, mdIcon: <LinkedInIcon />, link: "#", about: true, navbar: true, contact: true },
+    { name: "Instagram", lgIcon: <InstagramIcon fontSize="large" />, mdIcon: <InstagramIcon />, link: "#", about: true, navbar: false, contact: false },
+    { name: "Email", lgIcon: <EmailIcon fontSize="large" />, mdIcon: <EmailIcon />, link: "#", about: true, navbar: true, contact: true },
+    { name: "Telegram", lgIcon: <TelegramIcon fontSize="large" />, mdIcon: <TelegramIcon />, link: "#", about: true, navbar: false, contact: true },
+    { name: "WhatsApp", lgIcon: <WhatsAppIcon fontSize="large" />, mdIcon: <WhatsAppIcon />, link: "#", about: true, navbar: false, contact: true },
 ]

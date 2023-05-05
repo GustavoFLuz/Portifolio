@@ -34,10 +34,10 @@ export const About = () => {
                 <Typography variant="h4">Title</Typography>
                 <Typography variant='body1' sx={{ textAlign: "justify", p: 1 }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia a quasi exercitationem dolore suscipit accusamus similique nesciunt voluptates in enim, magnam, delectus dolorum quo, qui dolores commodi sapiente. Perferendis, vero?</Typography>
                 <Grid container spacing={1} columns={{ xs: Math.round(socialMedias.length / 2), sm: socialMedias.length }} sx={{ mt: { xs: 3, sm: 5 }, maxWidth: '600px', float: 'right' }}>
-                    {socialMedias.map((element, index) => (
+                    {socialMedias.filter(social=>social.about).map((element, index) => (
                         <Grid item xs={1} key={index} sx={{ textAlign: 'center' }}>
                             <IconButton onClick={() => window.open(element.link)}>
-                                {element.icon}
+                                {element.lgIcon}
                             </IconButton >
                         </Grid>
                     ))}

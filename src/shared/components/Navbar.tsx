@@ -2,7 +2,7 @@ import * as React from 'react';
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import styled, { keyframes } from 'styled-components';
-import { configs, navbarConstants } from '../constants';
+import { configs, navbarConstants, socialMedias } from '../constants';
 
 const hoverEffects = (props: any) => keyframes`
     100% {
@@ -48,13 +48,13 @@ export const Navbar = () => {
     };
 
     const getSocials = () => {
-        return navbarConstants.socials.map((social) => (
+        return socialMedias.filter(social=>social.navbar).map((social) => (
             <Button
-                key={social.title}
+                key={social.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, pt: 1, color: 'text.primary', display: 'block', }}
-                component="a" href={social.url}>
-                {social.icon}
+                component="a" href={social.link}>
+                {social.mdIcon}
             </Button>
         ))
     }
