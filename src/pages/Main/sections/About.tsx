@@ -1,6 +1,6 @@
 import { Box, Grid, IconButton, Skeleton, Typography, useTheme } from '@mui/material'
 import React, { useState } from 'react'
-import { about } from '../../../shared/constants'
+import { socialMedias } from '../../../shared/constants'
 
 const imageStyle: React.CSSProperties = {
     width: '260px',
@@ -13,7 +13,6 @@ const imageStyle: React.CSSProperties = {
 export const About = () => {
     const [loadingImage, setLoadingImage] = useState(true);
     const theme = useTheme();
-    const socialMedias = about.socialMedias;
 
     return (
         <Box sx={{
