@@ -1,7 +1,10 @@
-import React from 'react'
+import { Box } from '@mui/material'
+import { Hero } from './sections'
 
 export const Main = () => {
-  return (
-    <div>Main</div>
-  )
+    return (
+        <Box sx={{ height: '100%', width: '100%' }}>
+            <Hero/>
+        </Box>
+    )
 }
